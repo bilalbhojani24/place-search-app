@@ -8,9 +8,12 @@ const PlaceList = ({ places = [] }) => {
       {!!places.length ? (
         React.Children.toArray(
           places?.map((place, index) => (
-            <div className="cards" key={index}>
-              <section className="cards__header">
-                <p className="cards__header__title" data-test="listItemHeader">
+            <div className="placelist__cards" key={index}>
+              <section className="placelist__cards--header">
+                <p
+                  className="placelist__cards--header--title"
+                  data-test="listItemHeader"
+                >
                   {place.name}
                 </p>
                 <section>
@@ -19,7 +22,7 @@ const PlaceList = ({ places = [] }) => {
                       key={index}
                       data-test="listItemStars"
                       class={`fa fa-star ${
-                        index + 1 <= place?.rating ? 'checked' : ''
+                        index + 1 <= place?.rating ? 'placelist__checked' : ''
                       }`}
                     ></span>
                   ))}
@@ -30,7 +33,9 @@ const PlaceList = ({ places = [] }) => {
           ))
         )
       ) : (
-        <p data-test="noPlaceFoundTest" className='not__found__text'>No Places Found!!</p>
+        <p data-test="noPlaceFoundTest" className="placelist__not--found--text">
+          No Places Found!!
+        </p>
       )}
     </div>
   );

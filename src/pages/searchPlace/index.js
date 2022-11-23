@@ -36,11 +36,11 @@ const SearchPlace = () => {
     <div className="search__place">
       <Header data-test="headerComponentTest" handleChange={handleChange} />
       {permission ? (
-        <section className="body">
-          <aside>
+        <section className="search__place--body">
+          <aside className="search__place--aside">
             <PlaceList places={places.data} data-test="placeListComponent" />
           </aside>
-          <main>
+          <main className="search__place--main">
             <PlaceMap places={places.data} data-test="placeMapComponent" />
           </main>
         </section>

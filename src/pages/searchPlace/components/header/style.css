@@ -9,19 +9,19 @@
   align-items: center;
 }
 
-.header .logo {
+.header__logo {
   flex: 1;
 }
 
-.header .dropdown__menu {
+.header__dropdown--menu {
   flex: 3;
 }
 
-.header .profile__section {
+.header__profile--section {
   flex: 1;
 }
 
-.header .profile_button {
+.header__profile--button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -33,7 +33,7 @@
   margin-right: 10px;
 }
 
-.mobile__header {
+.header--mobile--header {
   display: none;
 }
 

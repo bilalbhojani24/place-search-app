@@ -14,11 +14,11 @@ const Header = (props) => {
   return (
     <>
       <div className="header" data-test="headerComponent">
-        <section className="logo" data-test="logoTest">
+        <section className="header__logo" data-test="logoTest">
           {logo}
         </section>
         {window.innerWidth > 600 && (
-          <section className="dropdown__menu">
+          <section className="header__dropdown--menu">
             <Dropdown
               options={PLACES_OPTIONS}
               handleChange={handleChange}
@@ -26,8 +26,11 @@ const Header = (props) => {
             />
           </section>
         )}
-        <section className="profile__section">
-          <button className="profile_button" data-test="profileButtonTest">
+        <section className="header__profile--section">
+          <button
+            className="header__profile--button"
+            data-test="profileButtonTest"
+          >
             BB
           </button>
         </section>
@@ -35,8 +38,8 @@ const Header = (props) => {
 
       {/* Mobile device only */}
       {window.innerWidth <= 600 && (
-        <div className="mobile__header" data-test="headerComponent">
-          <section className="dropdown__menu">
+        <div className="header--mobile--header" data-test="headerComponent">
+          <section className="header__dropdown--menu">
             <Dropdown
               options={PLACES_OPTIONS}
               handleChange={handleChange}

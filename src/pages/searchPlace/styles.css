@@ -2,31 +2,31 @@
   width: 100%;
 }
 
-.search__place .body {
+.search__place--body {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
-.search__place .body aside {
+.search__place--aside {
   width: 25%;
 }
 
-.search__place .body main {
+.search__place--main {
   width: 75%;
 }
 
 @media only screen and (max-width: 600px) {
-  .search__place .body {
+  .search__place--body {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .search__place .body main {
+  .search__place--main {
     width: 100%;
   }
 
-  .search__place .body aside {
+  .search__place--aside {
     width: 100%;
   }
 }
