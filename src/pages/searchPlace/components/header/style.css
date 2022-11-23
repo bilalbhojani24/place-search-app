@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  background-color: #142433;
+  color: #333;
+  font-weight: 300;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  flex: 1;
+}
+
+.header .dropdown__menu {
+  flex: 3;
+}
+
+.header .profile__section {
+  flex: 1;
+}
+
+.header .profile_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #142433;
+  outline: none;
+  border: none;
+  float: right;
+  margin-right: 10px;
+}
+
+.mobile__header {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .dropdown__menu {
+    display: none;
+  }
+
+  .mobile__header {
+    display: block;
+    margin: 20px 5px;
+  }
+}
