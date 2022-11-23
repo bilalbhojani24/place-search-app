@@ -37,6 +37,11 @@
   display: none;
 }
 
+.css-qc6sy-singleValue {
+  background-color: #ffffff;
+  color: #333333;
+}
+
 @media only screen and (max-width: 600px) {
   .header .dropdown__menu {
     display: none;
