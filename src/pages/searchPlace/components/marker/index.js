@@ -1,14 +1,12 @@
 import React from 'react';
+import './styles.css';
 
 const Marker = () => {
   return (
     <i
       data-test="mapMarker"
-      class="fa fa-3x fa-map-marker"
+      className="fa fa-3x fa-map-marker marker"
       aria-hidden="true"
-      style={{
-        color: 'red',
-      }}
     />
   );
 };

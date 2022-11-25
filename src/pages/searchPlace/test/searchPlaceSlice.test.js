@@ -15,14 +15,14 @@ describe('>>> Testing the slicer', () => {
   ];
 
   it('fetching data >> pending state', () => {
-    const action = { type: searchPlaceSlice.actions.getPlaces };
+    const action = { type: searchPlaceSlice.actions.requestPlaces };
     const state = reducer(initialState, action);
     expect(state).toEqual({ loading: true, error: false, data: [] });
   });
 
   it('fetching data >> success state', () => {
     const action = {
-      type: searchPlaceSlice.actions.getPlacesSuccess,
+      type: searchPlaceSlice.actions.responsePlacesSuccess,
       payload: expectedResponse,
     };
     const state = reducer(initialState, action);
@@ -35,7 +35,7 @@ describe('>>> Testing the slicer', () => {
 
   it('fetching data >> error state', () => {
     const action = {
-      type: searchPlaceSlice.actions.getPlacesFailure,
+      type: searchPlaceSlice.actions.responsePlacesFailure,
       payload: { error: 'some error' },
     };
     const state = reducer(initialState, action);

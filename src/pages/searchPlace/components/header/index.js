@@ -1,10 +1,19 @@
 import React from 'react';
-import Select from 'react-select';
 import { logo } from '../../utils';
 import PropTypes from 'prop-types';
 import './style.css';
 import { PLACES_OPTIONS } from '../../../../constants';
 import Dropdown from '../../../../components/dropdown';
+
+const dropdownHelper = (handleChange) => (
+  <section className="header__dropdown">
+    <Dropdown
+      options={PLACES_OPTIONS}
+      handleChange={handleChange}
+      data-test="dropdownComponent"
+    />
+  </section>
+);
 
 const Header = (props) => {
   const handleChange = (val) => {
@@ -17,18 +26,10 @@ const Header = (props) => {
         <section className="header__logo" data-test="logoTest">
           {logo}
         </section>
-        {window.innerWidth > 600 && (
-          <section className="header__dropdown--menu">
-            <Dropdown
-              options={PLACES_OPTIONS}
-              handleChange={handleChange}
-              data-test="dropdownComponent"
-            />
-          </section>
-        )}
-        <section className="header__profile--section">
+        {window.innerWidth > 600 && dropdownHelper(handleChange)}
+        <section className="header__profile">
           <button
-            className="header__profile--button"
+            className="header__profile__button"
             data-test="profileButtonTest"
           >
             BB
@@ -38,14 +39,8 @@ const Header = (props) => {
 
       {/* Mobile device only */}
       {window.innerWidth <= 600 && (
-        <div className="header--mobile--header" data-test="headerComponent">
-          <section className="header__dropdown--menu">
-            <Dropdown
-              options={PLACES_OPTIONS}
-              handleChange={handleChange}
-              data-test="dropdownComponent"
-            />
-          </section>
+        <div className="header__mobile__menu" data-test="headerComponent">
+          {dropdownHelper(handleChange)}
         </div>
       )}
     </>

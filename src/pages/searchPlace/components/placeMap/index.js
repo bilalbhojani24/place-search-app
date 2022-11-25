@@ -5,24 +5,17 @@ import { GOOGLE_API_KEY } from '../../../../constants';
 import Marker from '../marker';
 
 import './styles.css';
+import { defaultPropsForMap } from '../../utils';
 
 const PlaceMap = ({ places = [] }) => {
-  const defaultProps = {
-    center: {
-      lat: 19.8715541,
-      lng: 72.68373,
-    },
-    zoom: 15,
-  };
-
   return (
     <div className="map__contianer" data-test="mapContainer">
       <GoogleMapReact
         bootstrapURLKeys={{
           key: GOOGLE_API_KEY,
         }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
+        defaultCenter={defaultPropsForMap.center}
+        defaultZoom={defaultPropsForMap.zoom}
         data-test="mapReal"
       >
         {!!places.length &&

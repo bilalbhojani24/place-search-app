@@ -73,3 +73,11 @@ export const logo = (
     </g>
   </svg>
 );
+
+export const defaultPropsForMap = {
+  center: {
+    lat: 19.8715541,
+    lng: 72.68373,
+  },
+  zoom: 15,
+};

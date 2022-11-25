@@ -13,12 +13,12 @@
   align-items: center;
 }
 
-.placelist__cards--header--title {
+.placelist__cards__header {
   font-weight: bold;
   margin: 0;
 }
 
-.placelist__not--found--text {
+.placelist__not__found {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
