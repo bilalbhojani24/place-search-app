@@ -1,46 +1,20 @@
-# Getting Started with Create React App and Redux
+# React Place Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+### If no place from dropdown is selected
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/61111577/203521540-6585a0bd-a896-4505-b2a3-bf5cf745cf0f.png">
 
-In the project directory, you can run:
 
-### `npm start`
+### If place from dropdown is selected and found the places nearby
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/61111577/203521598-c8df1914-0eca-4b43-873f-5fc06cb5b840.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### If place from dropdown is selected and did not found the places nearby
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/61111577/203521661-2b88778b-6413-4630-925a-7f4508436b95.png">
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### If permission denied for location
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/61111577/203521883-6a868864-5e5e-477f-80e1-43f3fc577048.png">
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
