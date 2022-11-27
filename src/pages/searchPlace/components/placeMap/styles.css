@@ -1,0 +1,11 @@
+.map__contianer {
+  width: 100%;
+  height: 700px;
+}
+
+@media only screen and (max-width: 600px) {
+  .map__contianer {
+    width: 100%;
+    height: 350px;
+  }
+}

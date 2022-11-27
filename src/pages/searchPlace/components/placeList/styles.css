@@ -1,0 +1,25 @@
+.placelist__cards {
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+
+.placelist__checked {
+  color: orange;
+}
+
+.placelist__cards--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placelist__cards__header {
+  font-weight: bold;
+  margin: 0;
+}
+
+.placelist__not__found {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}

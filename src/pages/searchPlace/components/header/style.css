@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  background-color: #142433;
+  color: #333;
+  font-weight: 300;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 1;
+}
+
+.header__dropdown {
+  flex: 3;
+}
+
+.header__profile {
+  flex: 1;
+}
+
+.header__profile__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #142433;
+  outline: none;
+  border: none;
+  float: right;
+  margin-right: 10px;
+}
+
+.header__mobile__menu {
+  display: none;
+}
+
+.css-qc6sy-singleValue {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .dropdown__menu {
+    display: none;
+  }
+
+  .header__mobile__menu {
+    display: block;
+    margin: 20px 5px;
+  }
+}
